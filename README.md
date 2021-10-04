@@ -48,6 +48,6 @@
   
   <h3>🤓 Autor</h3>
   
-  <a href="https://www.linkedin.com/in/otaviodutra/"> Otávio Modena Dutra </a>
+  <p>Desenvolvido por<a href="https://www.linkedin.com/in/otaviodutra/"> Otávio Modena Dutra </a>
 
 </body>
