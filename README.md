@@ -44,6 +44,7 @@
 	<li><a href="https://beanvalidation.org/"> Bean Validation </a> </li>
 	<li><a href="https://swagger.io/"> Swagger </a> </li>
 	<li><a href="https://junit.org/junit5/"> JUnit </a> </li>
+	<li><a href="https://flywaydb.org/"> Flyway </a> </li>
     </ul>
   
   <h3>🤓 Autor</h3>
