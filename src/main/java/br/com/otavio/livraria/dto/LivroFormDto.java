@@ -9,6 +9,7 @@ import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.otavio.livraria.modelo.Autor;
@@ -35,5 +36,8 @@ public class LivroFormDto {
 
           @NotNull
           private Autor autor;
+
+          @JsonAlias("usuario_id")
+          private Long usuarioId;
 
 }

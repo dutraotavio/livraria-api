@@ -1,6 +1,7 @@
 package br.com.otavio.livraria.dto;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,10 +11,14 @@ import lombok.Setter;
 public class UsuarioFormDto {
 
           @NotBlank
+          @Size(min = 3, max = 30)
           private String nome;
+
           @NotBlank
+          @Size(min = 8, max = 30)
           private String login;
-          @NotBlank
+
+          @Size(min = 0, max = 12)
           private String senha;
 
 }

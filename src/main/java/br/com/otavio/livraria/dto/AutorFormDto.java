@@ -32,5 +32,4 @@ public class AutorFormDto {
           @NotBlank
           @Size(min = 10, max = 100)
           private String curriculo;
-
 }
