@@ -21,17 +21,17 @@
     <a href="#autor">Autor</a>
   </p>
   
-  <h3>🚀 Objetivo</h3>
+  <h2>🚀 Objetivo</h2>
   <p>Expandir os conhecimentos nos frameworks e bibliotecas que serão utilizadas para a criação desse projeto que se baseia em uma livraria.</p>
   
-  <h3>🗺️ Roadmap</h3>
+  <h2>🗺️ Roadmap</h2>
   <ol>
     <li>API's REST e SPRING BOOT ✔️</li>
     <li>CONTROLE DE VERSÃO E PERSISTÊNCIA COM JPA 🚧</li>
     <li>TRATAMENTO DE ERROS, TESTES AUTOMATIZADOS E DOCUMENTAÇÃO DA API ❌</li>
   </ol>
   
-  <h3>🛠️ Tecnologias</h3>
+  <h2>🛠️ Tecnologias</h2>
 	<p> As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto </p>
     <ul>
       	<li><a href="https://start.spring.io/"> Spring Initializr </a> </li>
@@ -47,7 +47,7 @@
 	<li><a href="https://flywaydb.org/"> Flyway </a> </li>
     </ul>
   
-  <h3>🤓 Autor</h3>
+  <h2>🤓 Autor</h2>
 	<p>Desenvolvido por Otávio Modena Dutra 👨‍💻 Entre em contato!</p>
 	
 <a href="https://www.instagram.com/dutraotavio" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
