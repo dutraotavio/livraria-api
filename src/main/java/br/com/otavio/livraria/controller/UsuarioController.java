@@ -21,17 +21,16 @@ import br.com.otavio.livraria.service.UsuarioService;
 public class UsuarioController {
 
           @Autowired
-          private UsuarioService usuarioService;
+          private UsuarioService service;
 
           @GetMapping
           public Page<UsuarioDto> listar(@PageableDefault(size = 10) Pageable pageable) {
-                    return usuarioService.listar(pageable);
-
+                    return service.listar(pageable);
           }
 
           @PostMapping()
           public void cadastrar(@RequestBody @Valid UsuarioFormDto dto) {
-                    usuarioService.cadastrar(dto);
+                    service.cadastrar(dto);
           }
 
 }

@@ -28,7 +28,6 @@ public class AutorService {
           @Transactional
           public void cadastrar(AutorFormDto dto) {
                     Autor autor = modelMapper.map(dto, Autor.class);
-                    autor.setId(null);
                     autorRepository.save(autor);
           }
 }

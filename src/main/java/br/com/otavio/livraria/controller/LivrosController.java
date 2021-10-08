@@ -18,19 +18,19 @@ import br.com.otavio.livraria.service.LivroService;
 
 @RestController
 @RequestMapping("/livros")
-public class CadastroLivrosController {
+public class LivrosController {
 
           @Autowired
-          private LivroService lisvroService;
+          private LivroService service;
 
           @GetMapping
           public Page<LivroDto> listar(@PageableDefault(size = 10) Pageable pageable) {
-                    return lisvroService.listar(pageable);
+                    return service.listar(pageable);
           }
 
           @PostMapping
           public void cadastrar(@RequestBody @Valid LivroFormDto dto) {
-                    lisvroService.cadastrar(dto);
+                    service.cadastrar(dto);
           }
 
 }

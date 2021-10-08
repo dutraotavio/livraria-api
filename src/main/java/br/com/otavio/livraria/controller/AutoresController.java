@@ -19,19 +19,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/autores")
-public class CadastroAutoresController {
+public class AutoresController {
 
           @Autowired
-          private AutorService autorService;
+          private AutorService service;
 
           @GetMapping
           public Page<AutorDto> listar(@PageableDefault(size = 10) Pageable pageable) {
-                    return autorService.listar(pageable);
+                    return service.listar(pageable);
           }
 
           @PostMapping
           public void cadastrar(@RequestBody @Valid AutorFormDto dto) {
-                    autorService.cadastrar(dto);
+                    service.cadastrar(dto);
           }
 
 }

@@ -12,11 +12,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString(exclude = { "curriculo" })
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -31,4 +29,5 @@ public class Autor {
 	private String email;
 	private LocalDate dataDeNascimento;
 	private String curriculo;
+
 }
