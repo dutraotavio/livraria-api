@@ -1,4 +1,4 @@
-<h1 align="center"> Alura Bootcamp Java - Livraria Online </h1>
+<h1 align="center"> Alura Bootcamp Java - Livraria API </h1>
 <br>
 <h2 align="center"> Criação de uma API REST utilizando Spring Boot </h2>
 <h4 align="center"> 
