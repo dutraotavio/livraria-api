@@ -33,5 +33,4 @@ public class AutoresController {
           public void cadastrar(@RequestBody @Valid AutorFormDto dto) {
                     service.cadastrar(dto);
           }
-
 }

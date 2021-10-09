@@ -9,6 +9,7 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ import lombok.Setter;
 public class AutorFormDto {
 
           @NotBlank
+          @Size(min = 5)
           private String nome;
 
           @NotBlank
@@ -27,9 +29,10 @@ public class AutorFormDto {
           @Past
           @NotNull
           @JsonAlias("data_de_nascimento")
+          @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
           private LocalDate dataDeNascimento;
 
           @NotBlank
-          @Size(min = 10, max = 100)
+          @Size(min = 10, max = 255)
           private String curriculo;
 }

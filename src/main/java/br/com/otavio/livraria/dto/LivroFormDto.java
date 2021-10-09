@@ -10,8 +10,8 @@ import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
-import br.com.otavio.livraria.modelo.Autor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,12 +20,13 @@ import lombok.Setter;
 public class LivroFormDto {
 
           @NotEmpty
-          @Size(min = 10, max = 30)
+          @Size(min = 10, max = 50)
           private String titulo;
 
           @NotNull
           @PastOrPresent
           @JsonAlias("data_de_lancamento")
+          @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
           private LocalDate dataDeLancamento;
 
           @NotNull
@@ -33,13 +34,6 @@ public class LivroFormDto {
           @DecimalMin(value = "100")
           private Integer paginas;
 
-          @NotNull
-          private Autor autor;
-
           @JsonAlias("autor_id")
           private Long autorId;
-
-          @JsonAlias("usuario_id")
-          private Long usuarioId;
-
 }

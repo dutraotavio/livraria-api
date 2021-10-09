@@ -4,5 +4,5 @@ CREATE table autores(
           email varchar(100) not null,
           dataDeNascimento date not null,
           curriculo varchar(255) not null,
-          primary key (id)
+          constraint primary key (id)
 );

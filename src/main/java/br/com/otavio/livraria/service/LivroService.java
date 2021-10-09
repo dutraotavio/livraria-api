@@ -26,9 +26,11 @@ public class LivroService {
           }
 
           @Transactional
-          public void cadastrar(LivroFormDto dto) {
-                    modelMapper.getConfiguration().setAmbiguityIgnored(true);
+          public LivroDto cadastrar(LivroFormDto dto) {
                     Livro livro = modelMapper.map(dto, Livro.class);
+                    livro.setId(null);
+
                     livroRepository.save(livro);
+                    return modelMapper.map(livro, LivroDto.class);
           }
 }
