@@ -14,7 +14,7 @@ public class UsuarioFormDto {
           @Size(min = 3, max = 30)
           private String nome;
 
-          @NotBlank
+          @NotBlank(message = "Usuário inválido!")
           @Size(min = 8, max = 30)
           private String login;
 

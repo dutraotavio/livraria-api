@@ -29,6 +29,7 @@ public class UsuarioService {
 
           @Transactional
           public void cadastrar(UsuarioFormDto dto) {
+
                     Usuario usuario = modelMapper.map(dto, Usuario.class);
 
                     String senha = new Random().nextInt(999999) + "";
