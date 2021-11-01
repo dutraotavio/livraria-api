@@ -27,8 +27,9 @@
   <h2>🗺️ Roadmap</h2>
   <ol>
     <li>API's REST e SPRING BOOT ✔️</li>
-    <li>CONTROLE DE VERSÃO E PERSISTÊNCIA COM JPA 🚧</li>
-    <li>TRATAMENTO DE ERROS, TESTES AUTOMATIZADOS E DOCUMENTAÇÃO DA API ❌</li>
+    <li>CONTROLE DE VERSÃO E PERSISTÊNCIA COM JPA ✔️</li>
+    <li>TRATAMENTO DE ERROS, TESTES AUTOMATIZADOS E DOCUMENTAÇÃO DA API 🚧</li>
+    <li>SEGURANÇA NA API ❌</li>
   </ol>
   
   <h2>🛠️ Tecnologias</h2>
