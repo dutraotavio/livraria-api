@@ -30,6 +30,7 @@
     <li>CONTROLE DE VERSÃO E PERSISTÊNCIA COM JPA ✔️</li>
     <li>TRATAMENTO DE ERROS, TESTES AUTOMATIZADOS E DOCUMENTAÇÃO DA API ✔️</li>
     <li>SEGURANÇA NA API 🚧</li>
+    <li>Docker, deploy e CI/CD ❌</li>
   </ol>
   
   <h2>🛠️ Tecnologias</h2>
